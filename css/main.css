@@ -16,7 +16,7 @@ body {
  * Navbar
  */
 .navbar {
-  padding: 0 40px;
+  padding: 5px 40px;
 }
 .navbar .navbar-collapse .navbar-nav .nav-item {
   margin: 0 13px;
