@@ -1,0 +1,133 @@
+@import "mixin";
+
+@font-face {
+	font-family: 'GenJyuuGothic-Light';
+    src: url("../font/GenJyuuGothic-Light.ttf") format("truetype");
+}
+
+
+$font-light: 'GenJyuuGothic-Light', sans-serif;
+$font-main: $font-light;
+
+$colors: (
+	bgc-title: #b197ac
+);
+
+/*
+ * General style
+ */
+body {
+	background: #444;
+	color: #fff;
+	font-size: 16px;
+	font-family: $font-main;
+}
+
+/*
+ * Navbar
+ */
+.navbar {
+	padding: 0 40px;
+	.navbar-collapse {
+		.navbar-nav {
+			.nav-item {
+				margin: 0 13px;
+				.nav-link {
+					color: #fff;
+					p {
+						font-size: 1.4rem;
+						letter-spacing: 0.3em;
+						margin-bottom: -5px;
+					}
+					span {
+						font-size: 0.8rem;
+						letter-spacing: 0.4em;
+					}
+				}
+				img {
+					width: 2.7rem;
+					margin-top: 0.8em;
+				}
+			}
+
+			.nav-img {
+				margin: 0 2px;
+			}
+			.nav-first-img {
+				margin-left: 13px;
+			}
+		}
+	}
+}
+
+
+
+/*
+ * Block - Welcome
+ */
+.welcome {
+	.main-block {
+		margin-top: 15vh;
+		margin-bottom: 10vh;
+		padding: 0 50px;
+
+
+		.img-block {
+			height: 60vh;
+
+			img {
+				padding: 0 80px;
+				width: 100%;
+			}
+		}
+
+		.text-block {
+			height: 60vh;
+
+			.v-line {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 8px;
+				border-radius: 4px;
+				background-color: #fff;
+			}
+
+			.text-area {
+				padding-left: 80px;
+				letter-spacing: 1em;
+
+				.text-1 {
+					font-size: 1.8rem;
+					margin-top: -10px;
+
+					p {
+						display: table;
+						padding-left: 0.3em;
+					}
+					.remark {
+						background: linear-gradient(0deg, map-get($colors, bgc-title) 60%, rgba(0,0,0,0) 50%);
+					}
+				}
+
+				.text-2 {
+					position: absolute;
+					bottom: -15px;
+					h1 {
+						.dash {
+							display: inline-block;
+							margin-left: 1em;
+							margin-right: 0.2em;
+							@include transform(scaleX(3));
+						}
+					}
+					p {
+						font-size: 1.4rem;
+						letter-spacing: 0.6em;
+					}
+				}
+			}
+		}
+	}
+}
