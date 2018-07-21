@@ -6,10 +6,23 @@
  * General style
  */
 body {
+  background-size: 100%;
   background: #444;
   color: #fff;
   font-size: 16px;
   font-family: "GenJyuuGothic-Light", sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.hide {
+  display: none;
 }
 
 /*
@@ -49,7 +62,7 @@ body {
  */
 .welcome .main-block {
   margin-top: 15vh;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
   padding: 0 50px;
 }
 .welcome .main-block .img-block {
@@ -103,4 +116,144 @@ body {
 .welcome .main-block .text-block .text-area .text-2 p {
   font-size: 1.4rem;
   letter-spacing: 0.6em;
+}
+
+.nav-link {
+  color: red !important;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.fixed-top + .about {
+  padding-top: 178px;
+}
+
+/*
+ * Block - About us
+ */
+.about {
+  padding-top: 100px;
+  min-height: 110vh;
+  background: #fff;
+  color: #444;
+}
+.about .wrapper {
+  margin-top: 70px;
+  letter-spacing: 0.3em;
+}
+.about .wrapper .menu {
+  padding-top: 10px;
+}
+.about .wrapper .menu .list .list-item {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.about .wrapper .menu .list .list-item .list-a {
+  color: #222;
+}
+.about .wrapper .menu .list .list-item + .list-item {
+  margin-top: 1em;
+}
+.about .wrapper .line {
+  height: 65vh;
+}
+.about .wrapper .line img {
+  height: 100%;
+}
+.about .wrapper .content .about-1 {
+  padding-top: 50px;
+  padding-right: 150px;
+}
+.about .wrapper .content .about-2 .detail {
+  paddding-right: 100px;
+}
+.about .wrapper .content .about-2 .detail .title {
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+.about .wrapper .content .about-2 .detail .title .sub-title {
+  color: #b197ac;
+  letter-spacing: 0.15em;
+  font-size: 1.4rem;
+  padding-left: 3px;
+}
+.about .wrapper .content .about-2 .detail .paragraph {
+  font-size: 1.2rem;
+}
+.about .wrapper .content .about-2 .photo {
+  vertical-align: middle;
+}
+.about .wrapper .content .about-2 .photo img {
+  width: 100%;
+  height: 100%;
+}
+.about .wrapper .content .about-2 .photo img + img {
+  margin-top: 10px;
+}
+.about .wrapper .content .about-3 {
+  letter-spacing: 0.15em;
+  height: 65vh;
+  overflow: hidden;
+}
+.about .wrapper .content .about-3 .info .info-block + .info-block {
+  margin-top: 40px;
+}
+.about .wrapper .content .about-3 .info .info-block .main-title {
+  color: #9d8bb4;
+  padding-left: 0.5em;
+  padding-bottom: 1.5em;
+  border-left: 4px solid #9d8bb4;
+}
+.about .wrapper .content .about-3 .info .info-block .sub-title {
+  font-size: 1.4rem;
+  color: #adb5bd;
+  padding-left: 3px;
+}
+.about .wrapper .content .about-3 .info .info-block .sub-title span {
+  font-size: 0.8rem;
+}
+.about .wrapper .content .about-3 .info .info-block .sub-title-2 {
+  font-size: 1.2rem;
+  color: #adb5bd;
+  padding-left: 3px;
+}
+.about .wrapper .content .about-3 .info .info-block .list {
+  margin-left: -7px;
+  font-size: 1rem;
+  color: #adb5bd;
+}
+.about .wrapper .content .about-3 .info .info-block .list .list-dot {
+  vertical-align: top;
+  padding-right: 0.7em;
+}
+.about .wrapper .content .about-3 .info .info-block .list .list-dot img {
+  width: 1em;
+}
+.about .wrapper .content .about-3 .map {
+  margin-top: 20px;
+}
+.about .wrapper .content .about-3 .map #map {
+  height: 250px;
+  width: 90%;
+}
+.about .wrapper .content .paragraph {
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
+}
+.about .wrapper .content .paragraph + .paragraph {
+  margin-top: 2em;
+}
+.about .wrapper .content .paragraph p + p {
+  margin-top: -0.8em;
+}
+.about .wrapper .dot {
+  margin-top: 30px;
+  padding: 20px 0;
+}
+.about .wrapper .dot img {
+  width: 22px;
 }
