@@ -78,7 +78,7 @@ li {
 }
 .welcome .main-block .img-block img {
   padding: 0 80px;
-  width: 640px;
+  height: 60vh;
 }
 .welcome .main-block .text-block {
   height: 60vh;
@@ -162,6 +162,14 @@ li {
 }
 .about .wrapper .menu .list .list-item .list-a {
   color: #222;
+  font-family: "GenJyuuGothic-Regular", sans-serif;
+}
+.about .wrapper .menu .list .list-item img {
+  width: 1.8rem;
+  padding-right: 5px;
+}
+.about .wrapper .menu .list .list-item img.no-show {
+  opacity: 0;
 }
 .about .wrapper .menu .list .list-item + .list-item {
   margin-top: 1em;

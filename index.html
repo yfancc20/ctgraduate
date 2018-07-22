@@ -10,6 +10,7 @@
 	<meta name="keywords" content="">
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/hover-min.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 
@@ -95,9 +96,36 @@
 				<div class="menu col-md-3">
 					<div class="col-xs-11">
 						<ul class="list text-center">
-							<li class="list-item"><b><a href="#" class="list-a" data-id="1">主題緣起</a></b></li>
-							<li class="list-item"><b><a href="#" class="list-a" data-id="2">策展團隊</a></b></li>
-							<li class="list-item"><b><a href="#" class="list-a" data-id="3">展覽資訊</a></b></li>
+							<li class="list-item">
+								<table class="mx-auto">
+									<tr>
+										<td><img src="img/circle1.png" id="list-icon-1"></td>
+										<td>
+											<a href="#" class="list-a hvr-forward" data-id="1">主題緣起</a>
+										</td>
+									</tr>
+								</table>
+							</li>
+							<li class="list-item">
+								<table class="mx-auto">
+									<tr>
+										<td><img src="img/circle2.png" id="list-icon-2" class="no-show"></td>
+										<td>
+											<a href="#" class="list-a hvr-forward" data-id="2">策展團隊</a>
+										</td>
+									</tr>
+								</table>
+							</li>
+							<li class="list-item">
+								<table class="mx-auto">
+									<tr>
+										<td><img src="img/circle3.png" id="list-icon-3" class="no-show"></td>
+										<td>
+											<a href="#" class="list-a hvr-forward" data-id="3">展覽資訊</a>
+										</td>
+									</tr>
+								</table>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -768,18 +796,26 @@ function targetScroll(){
 		});
 
 		// #abouts, content-switch
+		var activeId;
 		$('.list-a').on('click', function (e) {
 			e.preventDefault();
 			var target;
 
-			for (var i = 1; i <= 3; i++) {
-				target = '#about-' + i;
-				if (i == $(this).data('id')) {
-					$(target).removeClass('hide');
-				} else {
-					$(target).addClass('hide');
+			if (activeId != $(this).data('id')) {
+				for (var i = 1; i <= 3; i++) {
+					target = '#about-' + i;
+					if (i == $(this).data('id')) {
+						$('#list-icon-' + i).removeClass('no-show')
+											.addClass('animated fadeInLeft');
+						$(target).removeClass('hide');
+					} else {
+						$('#list-icon-' + i).removeClass('animated fadeInLeft')
+											.addClass('no-show');
+						$(target).addClass('hide');
+					}
 				}
 			}
+			activeId = $(this).data('id');
 		})
 
 

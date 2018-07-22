@@ -103,7 +103,7 @@ li {
 
 			img {
 				padding: 0 80px;
-				width: 640px;
+				height: 60vh;
 			}
 		}
 
@@ -191,6 +191,20 @@ li {
 					font-size: 1.6rem;
 					.list-a {
 						color: #222;
+						font-family: $font-regular;
+						// @include transition(all $trans-time ease-in-out);
+						// &:hover {
+						// 	padding-left: 1.6rem;
+						// 	@include transition(all $trans-time ease-in-out);
+						// }
+					}
+					img {
+						width: 1.8rem;
+						padding-right: 5px;
+
+						&.no-show {
+							opacity: 0;
+						}
 					}
 
 					& + .list-item {
