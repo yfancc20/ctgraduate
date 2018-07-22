@@ -10,6 +10,7 @@
 	<meta name="keywords" content="">
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 
 	<script src="js/jquery.min.js"></script>
@@ -64,7 +65,7 @@
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link category" href="#">
+					<a class="nav-link category" href="#project">
 						<p>活動專案</p>
 						<span>Projects</span>
 					</a>
@@ -592,6 +593,43 @@
 		</div>
 	</div>
 
+	<div class="container-fluid project" id="project">
+		<div class="project-title text-center">
+			<h1>寄 夢 企 劃</h1>
+			<h1>Our Projects</h1>
+		</div>
+
+		<div class="seperate text-center">|</div>
+
+		<div class="project-brief mx-auto">
+			<p>為達到知名度擴散、吸引潛在客群等目的，本屆畢籌策展團隊規劃並執行了三大宣傳企劃，分別為：夢境相館、夢境飲料吧、以及夢の私揪展前酒會。</p>
+		</div>
+
+		<div class="project-item mx-auto">
+			<div class="row">
+				<div class="col">
+					<div class="item-box">
+						<img src="img/projects/studio_after.png">
+						<img src="img/projects/studio_B4.png" class="item-before">
+						<div class="project-item-mask" data-id="1"></div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="item-box">
+						<img src="img/projects/bar_after.png">
+						<img src="img/projects/bar_B4.png" class="item-before">
+					</div>
+				</div>
+				<div class="col">
+					<div class="item-box">
+						<img src="img/projects/SQ_after.png">
+						<img src="img/projects/SQ_B4.png" class="item-before">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATijzNO6UDzem_W8UmRdEZUVG4r9NESqo&callback=initMap" async defer></script>
 </body>
@@ -644,7 +682,6 @@ function targetScroll(){
 			if ($(window).scrollTop() > navOffset.top) {
 				nav.addClass('fixed-top');
 			} else {
-				console.log('remove');
 				nav.removeClass('fixed-top');
 			}
 			
