@@ -31,9 +31,9 @@ $colors: (
  * General style
  */
 body {
-	// background-image: url("../img/bg.jpg");
+	
+	background-image: url("../img/bg.png");
 	background-size: 100%;
-	background: #444;
 	color: #fff;
 	font-size: 16px;
 	font-family: $font-main;
@@ -321,6 +321,19 @@ li {
 
 }
 
+.video {
+	height: 100vh;
+	background-color: #fff;
+
+	.video-block {
+		padding-top: 15vh;
+
+		#video {
+			width: 80% !important;
+		}
+	}
+}
+
 /*
  * Block - Works
  */
@@ -334,7 +347,6 @@ li {
 
 	.box {
 		height: calc(100vh - 100px);
-		border: 1px solid #444;
 
 		.title {
 			margin-left: 12vw;
