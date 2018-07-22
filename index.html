@@ -805,11 +805,12 @@ function timeoutAbout (target, time) {
 
 <script>
 	$(function () {
-		$('.v-line').addClass('active');
-		$('#navbar-lists').hide();
+		setTimeout(function(){
+			$('.v-line').addClass('active');
+		}, 800);
 		setTimeout(function(){
 			$('.top-info').addClass('inview');
-		}, 1000);
+		}, 1800);
 		
 		// fixed-top navbar
 		$(window).bind('scroll', function () {
