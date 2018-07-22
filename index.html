@@ -135,14 +135,14 @@
 
 				<div class="content col-md-8">
 					<div class="about-1" id="about-1">
-						<div class="paragraph">
+						<div class="paragraph about-animate-1">
 							<p>『　夢是一種微型意識，多一點的感性、少一些的理性；</p>
 							<p>　　沒有夢想的方向性、也缺少白日夢的自主性。</p>
 							<p>　　大學四年像一場夢，醒來即成現實；</p>
 							<p>　　寄放一段長夢在想像的園地，積久即成樂園。　　』</p>
 						</div>
 
-						<div class="paragraph">
+						<div class="paragraph about-animate-2">
 							<p>『　而青春正是一場美夢。　』</p>
 							<p>　　來到大學四年的最後一站　　畢業製作，交大傳科系107級的我們自去年春天起踏上了這條寄夢之路。時隔一年，十一段共做的長夢堆疊成一座樂園，本屆畢業成果展媒材豐富多元，透過不同主題及形式的呈現，企圖展現傳播科技的穿透力與影響力，並鼓勵展場中的來賓多與展內各式作品互動，從中找到樂趣、體驗創意，以及最重要的，一同感受我們成就這場美夢的軌跡。</p>
 						</div>
@@ -151,20 +151,20 @@
 					<div class="about-2 hide" id="about-2">
 						<div class="row">
 							<div class="col-7 detail">
-								<div class="title">
+								<div class="title about-animate-1">
 									<h2 class="main-title">拒郷愿求自主欠道歉畢籌小組</h2>
 									<h4 class="sub-title">Curation team : Be Honest</h4>
 								</div>
 
-								<div class="paragraph">
+								<div class="paragraph about-animate-2">
 									<p>我們是拒郷愿畢籌小組，傳科系史上第一組把畢展拿來當畢製作品的團隊。拒郷愿是我們的團名、更是理念，我們始終相信身為意見交匯的關口，畢籌團隊是不允許人云亦云、也禁止得過且過的。</p>
 								</div>
 
-								<div class="paragraph">
+								<div class="paragraph about-animate-3">
 									<p>過去一整年辦展的日子中，在人力極度精簡的設定下，每個人都同時身兼活動組、網攝組和器材組，雖然多數時間苦不堪言、壓力甚鉅，但四個人都非常慶幸擁有彼此，並在一年內躍昇彼此Instagram上的摯友。</p>
 								</div>
 
-								<div class="paragraph">
+								<div class="paragraph about-animate-4">
 									<p>關於我們還有許多有趣的little facts，<br>如果你有興趣的話，可以私訊粉專。</p>
 								</div>
 							</div>
@@ -775,6 +775,28 @@ function targetScroll(){
         }, 500);
     }
 }
+
+function animatedAbout(id, num)
+{
+	var prefix = '.about-animate-';
+	for (var i = 1; i <= num; i++) {
+		$(prefix + i).addClass('hide');
+
+		if (i == 1) {
+			console.log(i);
+			$(prefix + i).addClass('animated fadeInUp')
+					 	 .removeClass('hide');
+		} else {
+			var time = 200 * (i - 1);
+			window.setTimeout(function(){
+				console.log('prefix');
+				$(prefix + i).removeClass('hide')
+							 .addClass('animated fadeInUp');
+			}, time);
+			console.log(prefix + i);
+		}
+	}
+}
 </script>
 
 <script>
@@ -800,11 +822,12 @@ function targetScroll(){
 		$('.list-a').on('click', function (e) {
 			e.preventDefault();
 			var target;
+			var id = $(this).data('id');
 
-			if (activeId != $(this).data('id')) {
+			if (activeId != id) {
 				for (var i = 1; i <= 3; i++) {
 					target = '#about-' + i;
-					if (i == $(this).data('id')) {
+					if (i == id) {
 						$('#list-icon-' + i).removeClass('no-show')
 											.addClass('animated fadeInLeft');
 						$(target).removeClass('hide');
@@ -814,8 +837,12 @@ function targetScroll(){
 						$(target).addClass('hide');
 					}
 				}
+
+				// 三區塊個別的動畫數量
+				var num = [2, 4, 3];
+				animatedAbout(id, num[id - 1]);
 			}
-			activeId = $(this).data('id');
+			activeId = id;
 		})
 
 
