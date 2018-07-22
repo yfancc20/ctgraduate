@@ -169,7 +169,7 @@
 								</div>
 							</div>
 							<div class="photo col-3 offset-1">
-								<div class="row">
+								<div class="row about-animate-3">
 									<img src="img/team-1.png">
 									<img src="img/team-2.png">
 									<img src="img/team-3.png">
@@ -183,19 +183,19 @@
 							<div class="row">
 								<div class="col-5">
 									<div class="info-block">
-										<h3 class="main-title"><b>展覽日期</b></h3>
-										<h3 class="sub-title">2018 . MAY . 18<span>th</span> - 20<span>th</span></h3>
+										<h3 class="main-title about-animate-1"><b>展覽日期</b></h3>
+										<h3 class="sub-title about-animate-2">2018 . MAY . 18<span>th</span> - 20<span>th</span></h3>
 									</div>
 									<div class="info-block">
-										<h3 class="main-title"><b>展覽地點</b></h3>
-										<h3 class="sub-title"><b>好思當代文創藝術館</b></h3>
-										<p class="sub-title-2">台北市中正區重慶南路一段113號 </p>
+										<h3 class="main-title about-animate-1"><b>展覽地點</b></h3>
+										<h3 class="sub-title about-animate-2"><b>好思當代文創藝術館</b></h3>
+										<p class="sub-title-2 about-animate-2">台北市中正區重慶南路一段113號 </p>
 									</div>
 								</div>
 								<div class="col-6">
 									<div class="info-block">
-										<h3 class="main-title"><b>建議交通方式</b></h3>
-										<table class="list">
+										<h3 class="main-title about-animate-1"><b>建議交通方式</b></h3>
+										<table class="list about-animate-2">
 											<tr>
 												<td class="list-dot"><img src="img/circle3.png"></td>
 												<td>搭乘捷運至「台大醫院站」，自四號出口出站後直線穿越二二八公園，直走衡陽路至第一個路口右轉，路程約八分鐘。</td>
@@ -217,7 +217,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="map">
+						<div class="map about-animate-3">
 							<div id="map"></div>
 						</div>
 					</div>
@@ -776,26 +776,30 @@ function targetScroll(){
     }
 }
 
-function animatedAbout(id, num)
-{
-	var prefix = '.about-animate-';
+function animatedAbout (id, num) {
+	var prefix = '#about-' + id + ' .about-animate-';
+	var timeArr = [200, 250, 500];
 	for (var i = 1; i <= num; i++) {
-		$(prefix + i).addClass('hide');
+		$(prefix + i).addClass('no-show')
+					 .removeClass('animated fadeInUp');
 
 		if (i == 1) {
-			console.log(i);
 			$(prefix + i).addClass('animated fadeInUp')
-					 	 .removeClass('hide');
+					 	 .removeClass('no-show');
 		} else {
-			var time = 200 * (i - 1);
-			window.setTimeout(function(){
-				console.log('prefix');
-				$(prefix + i).removeClass('hide')
-							 .addClass('animated fadeInUp');
-			}, time);
-			console.log(prefix + i);
+			var time = timeArr[id - 1] * (i - 1);
+
+			timeoutAbout(prefix + i, time);
 		}
 	}
+}
+
+function timeoutAbout (target, time) {
+	setTimeout(function(){
+		$(target).removeClass('no-show')
+				 .addClass('animated fadeInUp');
+		console.log(time);
+	}, time);
 }
 </script>
 
