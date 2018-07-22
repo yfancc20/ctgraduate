@@ -443,7 +443,7 @@ li {
 	min-height: 100vh;
 	padding-top: 80px + 10px;
 	background-image: url("../img/projects/project_bg.jpg");
-	background-size: 100%;
+	background-size: 100% 100%;
 
 	.project-title {
 		padding: 1em 0;
@@ -487,6 +487,7 @@ li {
 				position: absolute;
 				top: 0;
 				left: 10%;
+				cursor: pointer;
 				@include transition(all $trans-time ease-in-out);
 
 				&.item-before:hover {
@@ -500,11 +501,6 @@ li {
 				@include transition(all $trans-time ease-in-out);
 			}
 
-			// .item-no-hide {
-			// 	opacity: 1;
-			// 	@include transition(all $trans-time ease-in-out);
-			// }
-
 			.project-item-mask {
 				position: absolute;
 				width: 88%;
@@ -513,6 +509,100 @@ li {
 				left: 5%;
 				// background: #fff;
 				border-radius: 100%;
+			}
+		}
+	}
+}
+
+.project-part {
+	min-height: 300vh;
+	background-image: url("../img/projects/content_BG.jpg");
+	background-size: 100%;
+	padding-top: 80px;
+
+	.part {
+		min-height: 100vh;
+		padding-top: 65px;
+
+		.block-left {
+			padding-left: 120px;
+			padding-right: 50px;
+		}
+		.block-right {
+			padding-left: 50px;
+			padding-right: 120px;
+		}
+		
+		.content-block {
+			.title-box {
+				display: table;
+
+				.title-line {
+					width: 7px;
+					background-color: #fff;
+					border-radius: 7px;
+					height: 4.35rem;
+				}
+
+				.title {
+					padding: 0 15px;
+					letter-spacing: 0.2em;
+					.main-title {
+						font-size: 2.8rem;
+						font-family: $font-regular;
+						margin-bottom: 0;
+					}
+					.sub-title {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			.content {
+				padding-left: 20px + 7px;
+				p {
+					font-size: 1.2rem;
+					margin-top: 1.5em;
+				}
+			}
+		}
+
+		.image-block {
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.part-2 {
+		.content-block {
+			.content {
+				.first-paragraph {
+					margin-top: 90px;
+				}
+			}
+		}
+	}
+
+	.part-3 {
+		.content-block {
+			.title-box {
+				position: absolute;
+				top: 0;
+				left: 120px;
+				width: 250px;
+
+				.title-line {
+					height: 7rem;
+				}
+				.sub-title-2 {
+					font-size: 2rem;
+				}
+			}
+			.content {
+				.first-paragraph {
+					margin-top: 90px;
+				}
 			}
 		}
 	}

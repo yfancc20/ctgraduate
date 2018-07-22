@@ -388,7 +388,7 @@ li {
   min-height: 100vh;
   padding-top: 90px;
   background-image: url("../img/projects/project_bg.jpg");
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 .project .project-title {
   padding: 1em 0;
@@ -428,6 +428,7 @@ li {
   position: absolute;
   top: 0;
   left: 10%;
+  cursor: pointer;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -454,4 +455,72 @@ li {
   top: 5%;
   left: 5%;
   border-radius: 100%;
+}
+
+.project-part {
+  min-height: 300vh;
+  background-image: url("../img/projects/content_BG.jpg");
+  background-size: 100%;
+  padding-top: 80px;
+}
+.project-part .part {
+  min-height: 100vh;
+  padding-top: 65px;
+}
+.project-part .part .block-left {
+  padding-left: 120px;
+  padding-right: 50px;
+}
+.project-part .part .block-right {
+  padding-left: 50px;
+  padding-right: 120px;
+}
+.project-part .part .content-block .title-box {
+  display: table;
+}
+.project-part .part .content-block .title-box .title-line {
+  width: 7px;
+  background-color: #fff;
+  border-radius: 7px;
+  height: 4.35rem;
+}
+.project-part .part .content-block .title-box .title {
+  padding: 0 15px;
+  letter-spacing: 0.2em;
+}
+.project-part .part .content-block .title-box .title .main-title {
+  font-size: 2.8rem;
+  font-family: "GenJyuuGothic-Regular", sans-serif;
+  margin-bottom: 0;
+}
+.project-part .part .content-block .title-box .title .sub-title {
+  margin-bottom: 0;
+}
+.project-part .part .content-block .content {
+  padding-left: 27px;
+}
+.project-part .part .content-block .content p {
+  font-size: 1.2rem;
+  margin-top: 1.5em;
+}
+.project-part .part .image-block img {
+  width: 100%;
+}
+.project-part .part-2 .content-block .content .first-paragraph {
+  margin-top: 90px;
+}
+.project-part .part-3 .content-block .title-box {
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: 250px;
+}
+.project-part .part-3 .content-block .title-box .title-line {
+  height: 7rem;
+}
+.project-part .part-3 .content-block .title-box .sub-title-2 {
+  font-size: 2rem;
+}
+.project-part .part-3 .content-block .content .first-paragraph {
+  margin-top: 90px;
 }
