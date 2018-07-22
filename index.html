@@ -23,12 +23,12 @@
 		<div class="main-block">
 			<div class="row">
 				<div class="col-md-6 col-sm-12 img-block text-center">
-					<img src="img/title.gif">
+					<img src="img/title.gif" class="animated fadeInLeft">
 				</div>
 				<div class="col-md-6 col-sm-12 text-block">
 					<div class="v-line"></div>
 					<div class="text-area">
-						<div class="text-1">
+						<div class="text-1 top-info">
 							<p class="remark">2018</p>
 							<p>國立交通大學</p>
 							<p>傳播與科技系</p>
@@ -36,7 +36,7 @@
 							<p class="remark">畢業成果展</p>
 						</div>
 
-						<div class="text-2">
+						<div class="text-2 top-info">
 							<h1>5.18<span class="dash">－</span>5.20</h1>
 							<p>台北好思當代文創藝術館</p>
 						</div>
@@ -51,7 +51,7 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse" id="navbarsExample04">
+		<div class="collapse navbar-collapse" id="navbar-lists">
 			<ul class="navbar-nav ml-auto text-center">
 				<li class="nav-item hvr-skew">
 					<a class="nav-link category" href="#about">
@@ -805,6 +805,12 @@ function timeoutAbout (target, time) {
 
 <script>
 	$(function () {
+		$('.v-line').addClass('active');
+		$('#navbar-lists').hide();
+		setTimeout(function(){
+			$('.top-info').addClass('inview');
+		}, 1000);
+		
 		// fixed-top navbar
 		$(window).bind('scroll', function () {
 			if ($(window).scrollTop() > navOffset.top) {
@@ -869,6 +875,8 @@ function timeoutAbout (target, time) {
 		        }, 500);
 		    }
 		});
+
+
 
 
 	})
