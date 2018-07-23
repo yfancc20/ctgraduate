@@ -609,3 +609,66 @@ li {
 .project-part .part-3 .content-block .content .first-paragraph {
   margin-top: 90px;
 }
+
+.info {
+  padding-top: 130px;
+  font-family: "GenJyuuGothic-Regular", sans-serif;
+  background: #fff;
+  color: #9eb0bd;
+  letter-spacing: 0.5em;
+  min-height: 80vh;
+}
+.info .info-area {
+  padding: 0;
+}
+.info .info-area .seperate {
+  margin: 0 auto;
+  margin-top: 1.5em;
+  margin-bottom: 1.2em;
+  height: 3px;
+  width: 4.7rem;
+  background-color: #9eb0bd;
+}
+.info .info-area .info-title ~ .info-title {
+  margin-top: 50px;
+}
+.info .info-area .img-organizer {
+  width: 70%;
+}
+.info .info-area .img-sponsor {
+  width: 100%;
+}
+.info .info-area .img-teacher {
+  width: 100%;
+}
+.info .info-area .member {
+  letter-spacing: 0.2em;
+  padding-right: 60px;
+  font-size: 0.9rem;
+}
+.info .info-area .member .member-table-2 {
+  width: 100%;
+}
+
+.footer {
+  min-height: 20vh;
+  background-color: #9eb0bd;
+  font-family: "GenJyuuGothic-Regular", sans-serif;
+  letter-spacing: 0.15em;
+}
+.footer .footer-area {
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+.footer .footer-area p {
+  font-size: 1.2rem;
+}
+.footer .footer-area p + p {
+  margin-top: -12px;
+}
+.footer .footer-icon {
+  padding-top: 50px;
+}
+.footer .footer-icon img {
+  width: 3rem;
+}

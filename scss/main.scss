@@ -24,7 +24,8 @@ $colors: (
 	purple: #b197ac,
 	purple-2: #9d8bb4,
 	orange: #e7aba2,
-	gray: #adb5bd
+	gray: #adb5bd,
+	light: #9eb0bd
 );
 
 /*
@@ -669,6 +670,75 @@ li {
 					margin-top: 90px;
 				}
 			}
+		}
+	}
+}
+
+.info {
+	padding-top: 80px + 50px;
+	font-family: $font-regular;
+	background: #fff;
+	color: map-get($colors, light);
+	letter-spacing: 0.5em;
+	min-height: 80vh;
+
+	.info-area {
+		padding: 0;
+		.seperate {
+			margin: 0 auto;
+			margin-top: 1.5em;
+			margin-bottom: 1.2em;
+			height: 3px;
+			width: 4.7rem;
+			background-color: map-get($colors, light);
+		}
+		.info-title {
+			& ~ .info-title {
+				margin-top: 50px;
+			}
+		}
+		.img-organizer {
+			width: 70%;
+		}
+		.img-sponsor {
+			width: 100%;
+		}
+		.img-teacher{
+			width: 100%;
+		}
+
+		.member {
+			letter-spacing: 0.2em;
+			padding-right: 60px;
+			font-size: 0.9rem;
+			.member-table-2 {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.footer {
+	min-height: 20vh;
+	background-color: map-get($colors, light);
+	font-family: $font-regular;
+	letter-spacing: 0.15em;
+
+	.footer-area {
+		padding-bottom: 30px;
+		padding-top: 50px;
+		p {
+			font-size: 1.2rem;
+			& + p {
+				margin-top: -12px;
+			}
+		}
+	}
+
+	.footer-icon {
+		padding-top: 50px;
+		img {
+			width: 3rem;
 		}
 	}
 }
