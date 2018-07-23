@@ -19,6 +19,8 @@
 </head>
 
 <body>
+	<div class="loader" id="loader"></div>
+
 	<div class="container-fluid welcome" id="welcome">
 		<div class="main-block">
 			<div class="row">
@@ -810,6 +812,7 @@ function timeoutAbout (target, time) {
 </script>
 <script>
 window.onload = function () {
+	$('#loader').addClass('disappear');
 	setTimeout(function(){
 		$('.v-line').addClass('active');
 	}, 800);
