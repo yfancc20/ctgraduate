@@ -78,13 +78,19 @@
 					</a>
 				</li>
 				<li class="nav-item nav-img nav-first-img">
-					<img src="img/icon-fb.png">
+					<a href="https://www.facebook.com/CTGradShow/">
+						<img src="img/icon-fb.png">
+					</a>
 				</li>
 				<li class="nav-item nav-img">
-					<img src="img/icon-mail.png">
+					<a href="mailto:nctucts07ge@gmail.com">
+						<img src="img/icon-mail.png">
+					</a>
 				</li>
 				<li class="nav-item nav-img">
-					<img src="img/icon-home.png">
+					<a href="#" id="nav-home">
+						<img src="img/icon-home.png">
+					</a>
 				</li>
 			</ul>
 		</div>
@@ -875,6 +881,13 @@ function timeoutAbout (target, time) {
 		            scrollTop: offset
 		        }, 500);
 		    }
+		});
+
+		// nav home
+		$('#nav-home').on('click', function () {
+			$('html, body').animate({
+	            scrollTop: 0
+	        }, 500);
 		});
 
 
