@@ -25,7 +25,7 @@
 		<div class="main-block">
 			<div class="row">
 				<div class="col-md-6 col-sm-12 img-block text-center">
-					<img src="img/title.gif" class="animated fadeInLeft">
+					<img src="img/title.gif" class="no-show" id="top-gif">
 				</div>
 				<div class="col-md-6 col-sm-12 text-block">
 					<div class="v-line"></div>
@@ -53,7 +53,7 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse" id="navbar-lists">
+		<div class="collapse navbar-collapse no-show" id="navbar-lists">
 			<ul class="navbar-nav ml-auto text-center">
 				<li class="nav-item hvr-skew">
 					<a class="nav-link category" href="#about">
@@ -812,12 +812,15 @@ function timeoutAbout (target, time) {
 </script>
 <script>
 window.onload = function () {
+	$('#top-gif').addClass('animated fadeInLeft');
 	$('#loader').addClass('disappear');
 	setTimeout(function(){
 		$('.v-line').addClass('active');
 	}, 800);
 	setTimeout(function(){
 		$('.top-info').addClass('inview');
+		$('#navbar-lists').removeClass('no-show')
+						  .addClass('animated fadeInUp');
 	}, 1800);
 }
 </script>
