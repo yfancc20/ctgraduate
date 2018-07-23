@@ -471,7 +471,7 @@ li {
 
 .project {
   min-height: 100vh;
-  padding-top: 90px;
+  padding-top: 130px;
   background-image: url("../img/projects/project_bg.jpg");
   background-size: 100% 100%;
 }
@@ -502,17 +502,17 @@ li {
 }
 .project .project-item {
   width: 80%;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .project .project-item .item-box {
   padding: 5%;
   height: 100%;
 }
 .project .project-item .item-box img {
-  width: 80%;
+  width: 60%;
   position: absolute;
   top: 0;
-  left: 10%;
+  left: 20%;
   cursor: pointer;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
