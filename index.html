@@ -808,15 +808,19 @@ function timeoutAbout (target, time) {
 	}, time);
 }
 </script>
+<script>
+window.onload = function () {
+	setTimeout(function(){
+		$('.v-line').addClass('active');
+	}, 800);
+	setTimeout(function(){
+		$('.top-info').addClass('inview');
+	}, 1800);
+}
+</script>
 
 <script>
 	$(function () {
-		setTimeout(function(){
-			$('.v-line').addClass('active');
-		}, 800);
-		setTimeout(function(){
-			$('.top-info').addClass('inview');
-		}, 1800);
 		
 		// fixed-top navbar
 		$(window).bind('scroll', function () {
