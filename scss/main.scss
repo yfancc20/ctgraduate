@@ -541,18 +541,18 @@ li {
 	}
 
 	.project-item {
-		width: 80%;
-		margin-top: 70px;
+		width: 60%;
+		margin-top: 50px;
 
 		.item-box {
 			padding: 5%;
 			height: 100%;
 
 			img {
-				width: 60%;
+				width: 80%;
 				position: absolute;
 				top: 0;
-				left: 20%;
+				left: 10%;
 				cursor: pointer;
 				@include transition(all $trans-time ease-in-out);
 

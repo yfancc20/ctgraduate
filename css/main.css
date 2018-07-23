@@ -501,18 +501,18 @@ li {
   letter-spacing: 0.2em;
 }
 .project .project-item {
-  width: 80%;
-  margin-top: 70px;
+  width: 60%;
+  margin-top: 50px;
 }
 .project .project-item .item-box {
   padding: 5%;
   height: 100%;
 }
 .project .project-item .item-box img {
-  width: 60%;
+  width: 80%;
   position: absolute;
   top: 0;
-  left: 20%;
+  left: 10%;
   cursor: pointer;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
