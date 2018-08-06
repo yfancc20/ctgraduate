@@ -13,6 +13,7 @@
 	<link href="css/hover-min.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/mobile.css" rel="stylesheet">
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.lazyload.min.js"></script>
@@ -49,12 +50,13 @@
 		</div>
 	</div>
 
-	<nav class="navbar navbar-expand-md navbar-dark" id="nav">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+	<nav class="navbar navbar-expand-md navbar-dark navbar-always-fixed-top container-fluid" id="nav">
+		<div class="container-fluid">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-lists" aria-controls="navbar-lists" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse no-show" id="navbar-lists">
+		<div class="collapse navbar-collapse" id="navbar-lists">
 			<ul class="navbar-nav ml-auto text-center">
 				<li class="nav-item hvr-skew">
 					<a class="nav-link category" href="#about">
@@ -97,7 +99,9 @@
 				</li>
 			</ul>
 		</div>
-    </nav>
+	</div>
+	</nav>
+</div>
 
     <div class="container-fluid about"  id="about">
     	<div class="wrapper">
@@ -159,7 +163,7 @@
 
 					<div class="about-2 hide" id="about-2">
 						<div class="row">
-							<div class="col-7 detail">
+							<div class="col-md-7 detail">
 								<div class="title about-animate-1">
 									<h2 class="main-title">拒郷愿求自主欠道歉畢籌小組</h2>
 									<h4 class="sub-title">Curation team : Be Honest</h4>
@@ -177,7 +181,7 @@
 									<p>關於我們還有許多有趣的little facts，<br>如果你有興趣的話，可以私訊粉專。</p>
 								</div>
 							</div>
-							<div class="photo col-3 offset-1">
+							<div class="photo col-md-3 offset-md-1">
 								<div class="row about-animate-3">
 									<img src="img/team-1.png" class="lazyload">
 									<img src="img/team-2.png" class="lazyload">
@@ -190,7 +194,7 @@
 					<div class="about-3 hide" id="about-3">
 						<div class="info">
 							<div class="row">
-								<div class="col-5">
+								<div class="col-md-5">
 									<div class="info-block">
 										<h3 class="main-title about-animate-1"><b>展覽日期</b></h3>
 										<h3 class="sub-title about-animate-2">2018 . MAY . 18<span>th</span> - 20<span>th</span></h3>
@@ -201,7 +205,7 @@
 										<p class="sub-title-2 about-animate-2">台北市中正區重慶南路一段113號 </p>
 									</div>
 								</div>
-								<div class="col-6">
+								<div class="col-md-6">
 									<div class="info-block">
 										<h3 class="main-title about-animate-1"><b>建議交通方式</b></h3>
 										<table class="list about-animate-2">
@@ -242,7 +246,7 @@
 
     <div class="container-fluid video" id="video">
     	<div class="text-center video-block">
-			<embed src="https://www.youtube.com/watch?v=mupVTFanQ8c&feature=youtu.be" type="application/x-shockwave-flash" wmode="transparent" width="960" height="540" id="video"></embed>
+    		<iframe src="https://www.youtube.com/embed/mupVTFanQ8c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen id="video"></iframe>
 		</div>
     </div>
 
@@ -658,7 +662,7 @@
 
 	<div class="container-fluid project-part" id="part-1">
 		<div class="row part part-1">
-			<div class="col content-block block-left">
+			<div class="col-md-6 content-block block-left">
 				<div class="title-box">
 					<div class="title-line d-inline-block"></div>
 					<div class="title d-inline-block">
@@ -673,21 +677,21 @@
 				</div>
 			</div>
 
-			<div class="col image-block block-right">
-				<div class="image">
+			<div class="col-md-6 image-block block-right">
+				<div class="image text-center">
 					<img src="img/projects/studio_pics.png" class="lazyload">
 				</div>
 			</div>
 		</div>
 		
 		<div class="row part part-2" id="part-2">
-			<div class="col image-block block-left">
-				<div class="image">
+			<div class="col-md-6 image-block block-left">
+				<div class="image text-center">
 					<img src="img/projects/bar_pics.png" class="lazyload">
 				</div>
 			</div>
 
-			<div class="col content-block block-right">
+			<div class="col-md-6 content-block block-right">
 				<div class="title-box ml-auto">
 					<div class="title d-inline-block">
 						<h4 class=sub-title>寄夢企劃vol.2－</h4>
@@ -716,7 +720,7 @@
 			</div>
 
 			<div class="col-md-6 image-block">
-				<div class="image">
+				<div class="image text-center">
 					<img src="img/projects/SQ_pics.png" class="lazyload">
 				</div>
 			</div>
@@ -966,7 +970,7 @@ function timeoutAbout (target, time) {
 }
 </script>
 <script>
-window.onload = function () {
+$(function () {
 	$('#top-gif').addClass('animated fadeInLeft');
 	$('#loader').addClass('disappear');
 	setTimeout(function(){
@@ -977,7 +981,7 @@ window.onload = function () {
 		$('#navbar-lists').removeClass('no-show')
 						  .addClass('animated fadeInUp');
 	}, 1800);
-}
+});
 </script>
 
 <script>
@@ -986,9 +990,9 @@ window.onload = function () {
 		// fixed-top navbar
 		$(window).bind('scroll', function () {
 			if ($(window).scrollTop() > navOffset.top) {
-				nav.addClass('fixed-top');
+				nav.addClass('navbar-fixed-top');
 			} else {
-				nav.removeClass('fixed-top');
+				nav.removeClass('navbar-fixed-top');
 			}
 			
 			// change color when moving over #abouts
@@ -1057,13 +1061,8 @@ window.onload = function () {
 		});
 
 		// lazyloader
-
 		$("img.lazyload").lazyload({
               effect : "fadeIn"
         });
-
-
-
-
 	})
 </script>

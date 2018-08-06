@@ -31,12 +31,15 @@ $colors: (
 /*
  * General style
  */
+html {
+	width: 100%;
+	font-size: 16px;
+}
 body {
-	
+    background-repeat: no-repeat;
 	background-image: url("../img/bg.png");
 	background-size: 100%;
 	color: #fff;
-	font-size: 16px;
 	font-family: $font-main;
 }
 a:hover {
@@ -395,7 +398,8 @@ li {
 		padding-top: 15vh;
 
 		#video {
-			width: 80% !important;
+			width: 1080px;
+			height: 608px;
 		}
 	}
 }

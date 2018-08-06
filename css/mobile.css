@@ -1,0 +1,232 @@
+@media all and (min-width: 480px) and (max-width: 759px) {
+  .navbar {
+    padding: 10px; }
+    .navbar.navbar-always-fixed-top {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030; } }
+@media all and (max-width: 759px) {
+  .container {
+    width: 450px; }
+
+  html {
+    font-size: 12px; }
+
+  body {
+    background-size: auto; }
+
+  .fixed-top + .about {
+    padding-top: 10px; }
+
+  .welcome .main-block {
+    margin-top: 80px;
+    margin-bottom: 0;
+    padding: 0; }
+    .welcome .main-block .img-block {
+      height: auto;
+      margin-bottom: 50px; }
+      .welcome .main-block .img-block img {
+        padding: 0;
+        width: 60%;
+        height: auto; }
+    .welcome .main-block .text-block .text-area {
+      padding-left: 50px; }
+      .welcome .main-block .text-block .text-area .text-1 {
+        font-size: 1.4rem; }
+      .welcome .main-block .text-block .text-area .text-2 {
+        position: relative; }
+        .welcome .main-block .text-block .text-area .text-2 h1 {
+          font-size: 2rem; }
+        .welcome .main-block .text-block .text-area .text-2 p {
+          font-size: 1.2rem; }
+    .welcome .main-block .text-block .v-line {
+      display: none; }
+
+  .navbar {
+    padding: 0; }
+    .navbar .navbar-toggler {
+      margin: 10px; }
+    .navbar.navbar-always-fixed-top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1030; }
+    .navbar .navbar-collapse {
+      background-color: rgba(176, 150, 171, 0.8);
+      padding: 10px; }
+      .navbar .navbar-collapse .navbar-nav .nav-img {
+        margin: 0 2px; }
+      .navbar .navbar-collapse .navbar-nav .nav-first-img {
+        margin-left: 0px; }
+
+  .about .wrapper {
+    margin-top: 0; }
+    .about .wrapper .menu .list {
+      padding-left: 0; }
+    .about .wrapper .line {
+      height: 0; }
+      .about .wrapper .line img {
+        display: none; }
+    .about .wrapper .content .paragraph {
+      font-size: 1.1rem; }
+    .about .wrapper .content .about-1 {
+      padding-top: 20px;
+      padding-right: 10px;
+      padding-left: 10px; }
+    .about .wrapper .content .about-2 .detail {
+      paddding-right: 100px; }
+      .about .wrapper .content .about-2 .detail .title {
+        margin-bottom: 0; }
+        .about .wrapper .content .about-2 .detail .title h2 {
+          font-size: 1.5rem; }
+        .about .wrapper .content .about-2 .detail .title .sub-title {
+          font-size: 1.1rem; }
+      .about .wrapper .content .about-2 .detail .paragraph {
+        font-size: 1rem; }
+        .about .wrapper .content .about-2 .detail .paragraph + .paragraph {
+          margin-top: 0; }
+    .about .wrapper .content .about-2 .photo {
+      padding-left: 8%; }
+      .about .wrapper .content .about-2 .photo img {
+        width: 32%; }
+        .about .wrapper .content .about-2 .photo img + img {
+          margin-top: 0; }
+    .about .wrapper .content .about-3 {
+      height: auto; }
+      .about .wrapper .content .about-3 .info {
+        min-height: 0;
+        padding-top: 0;
+        margin-bottom: 20px; }
+        .about .wrapper .content .about-3 .info .info-block h3 {
+          font-size: 1.3rem; }
+        .about .wrapper .content .about-3 .info .info-block + .info-block {
+          margin-top: 10px; }
+        .about .wrapper .content .about-3 .info .info-block .main-title {
+          padding-bottom: 0; }
+        .about .wrapper .content .about-3 .info .info-block .sub-title {
+          font-size: 1.1rem;
+          padding-left: 15px; }
+        .about .wrapper .content .about-3 .info .info-block .sub-title-2 {
+          font-size: 1rem;
+          padding-left: 13px; }
+      .about .wrapper .content .about-3 .map #map {
+        height: 200px;
+        width: 100%; }
+
+  .video {
+    height: auto; }
+    .video .video-block {
+      padding-top: 0; }
+      .video .video-block #video {
+        width: 90vw;
+        height: 67.5vw; }
+
+  .works {
+    padding-top: 0px; }
+    .works .box {
+      height: auto; }
+      .works .box .title {
+        margin-left: 0;
+        margin-top: 10vh;
+        padding: 0 30px; }
+        .works .box .title img {
+          width: 100%; }
+      .works .box .description {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8vh;
+        width: 80vw;
+        color: #b096ab; }
+        .works .box .description p {
+          font-size: 1.4rem;
+          line-height: 2em; }
+    .works .works-list .work-img .desc-bg .desc .title {
+      font-size: 1.5rem; }
+    .works .works-list .work-img .desc-bg .desc .icon {
+      padding-top: 0; }
+      .works .works-list .work-img .desc-bg .desc .icon img {
+        width: 2rem; }
+    .works .works-list .work-img .desc-bg .desc .sub-title {
+      font-size: 1.2rem;
+      margin-bottom: 0; }
+    .works .works-list .work-img .desc-bg .desc .table-member {
+      font-size: 0.8rem;
+      margin-bottom: 0.6rem; }
+    .works .works-list .work-img .desc-bg .desc .brief {
+      font-size: 0.8rem; }
+
+  .project .project-brief {
+    width: auto; }
+  .project .project-item {
+    width: 100%; }
+    .project .project-item .col {
+      padding: 0; }
+    .project .project-item .item-box .item-before {
+      display: none; }
+    .project .project-item .item-box img {
+      width: 90%;
+      left: 5%; }
+
+  .project-part {
+    padding-top: 0; }
+    .project-part .part {
+      min-height: 100vh; }
+      .project-part .part .block-left {
+        padding-left: 15px;
+        padding-right: 15px; }
+      .project-part .part .content-block .content p {
+        margin-top: 1.5em;
+        margin-bottom: 0.8em; }
+      .project-part .part .content-block .content .first-paragraph {
+        margin-top: 10px; }
+      .project-part .part .image-block .image {
+        text-align: cneter; }
+      .project-part .part.part-2 {
+        min-height: 110vh; }
+        .project-part .part.part-2 .content-block {
+          margin-top: 20px;
+          margin-bottom: 30px;
+          padding-left: 15px;
+          padding-right: 15px; }
+        .project-part .part.part-2 .image-block .image img {
+          width: 60%; }
+      .project-part .part.part-3 .content-block {
+        padding-left: 15px;
+        padding-right: 15px; }
+      .project-part .part.part-3 .image-block {
+        margin-top: 100px; }
+        .project-part .part.part-3 .image-block .image img {
+          width: 60%; }
+
+  .info {
+    padding-top: 50px; }
+    .info .info-area .info-title {
+      font-size: 1.3rem;
+      margin-top: 10px; }
+      .info .info-area .info-title ~ .info-title {
+        margin-top: 10px; }
+    .info .info-area .seperate {
+      margin-top: 0;
+      margin-bottom: 0; }
+    .info .info-area .img-organizer {
+      width: 40%; }
+    .info .info-area .img-teacher {
+      width: 60%; }
+    .info .info-area .img-sponsor {
+      width: 60%; }
+    .info .info-area .member {
+      padding-right: 0; }
+      .info .info-area .member .member-table, .info .info-area .member .member-table-2 {
+        margin: 0 auto !important;
+        margin-top: 20px !important; }
+      .info .info-area .member .member-table-2 {
+        margin-bottom: 20px !important; }
+
+  .footer .footer-area {
+    padding-bottom: 10px;
+    padding-top: 20px; }
+  .footer .footer-icon {
+    padding-top: 0;
+    padding-bottom: 20px; } }
