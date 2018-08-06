@@ -6,7 +6,10 @@
       top: 0;
       right: 0;
       left: 0;
-      z-index: 1030; } }
+      z-index: 1030; }
+
+  .project .project-brief {
+    width: auto; } }
 @media all and (max-width: 759px) {
   .container {
     width: 450px; }
